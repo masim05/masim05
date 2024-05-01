@@ -1,4 +1,4 @@
-- 👋 Hi, there!
+👋 Hi, there!
 
 My name is Max, I'm a software engineer, engineering manager and crypto enthusiast. My main experience is related to backend development of large scale user facing products (upto 5K rps).
 I joined crypto industry in the second half of 2023 as an individual validator.
