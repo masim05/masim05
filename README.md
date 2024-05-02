@@ -7,6 +7,7 @@ I joined crypto industry in the second half of 2023 as an individual validator.
 I will be happy to join your testnet as an early entrant or your team to combine our efforts.
 
 ### Validating
+[![Arkeo](/assets/img/arkeo.png 'Arkeo')](https://testnet.arkeo.explorers.guru/validator/tarkeovaloper103l27gd5yw94qu8w0qhppzfd2ayef6x5ljjszq)
 
 
 <!---
