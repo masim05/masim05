@@ -13,6 +13,7 @@ I will be happy to join your testnet as an early entrant or your team to combine
 ### Validating archive
 ![Cascadia](/assets/img/cascadia.jpeg)
 ![Entangle](/assets/img/entangle.png)
+![NuLink](/assets/img/nulink.png)
 
 
 <!---
