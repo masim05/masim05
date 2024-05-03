@@ -9,6 +9,7 @@ I will be happy to join your testnet as an early entrant or your team to combine
 ### Validating
 [![Galactica](/assets/img/galactica.svg 'Galactica')](https://ping.pfc.zone/galactica-testnet/staking/galavaloper1nak4arm625uj3qleekh0760wtjamczuse0yrz0)
 [![AlignedLayer](/assets/img/alignedlayer.png 'AlignedLayer')](https://testnet.alignedlayer.explorers.guru/validator/alignedvaloper1yaaxdjppr9h2x8v7nrum7utxy66772eks33rmy)
+[![0g](/assets/img/0g.jpeg 'og')](https://explorer.validatorvn.com/OG-Testnet/staking/evmosvaloper1nak4arm625uj3qleekh0760wtjamczustyfuhv)
 [![Arkeo](/assets/img/arkeo.png 'Arkeo')](https://testnet.arkeo.explorers.guru/validator/tarkeovaloper103l27gd5yw94qu8w0qhppzfd2ayef6x5ljjszq)
 
 
