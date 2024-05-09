@@ -6,7 +6,9 @@ I joined crypto industry in the second half of 2023 as an individual validator.
 
 I will be happy to join your testnet as an early entrant or your team to combine our efforts.
 
-### Validating
+### Validating (mainnets first)
+[![Band](/assets/img/band.svg 'Band')](https://band.explorers.guru/validator/bandvaloper1vamfrqdhhjurj3nu4mzev8q2xw2j9prq0yxe8e)
+
 [![Galactica](/assets/img/galactica.svg 'Galactica')](https://ping.pfc.zone/galactica-testnet/staking/galavaloper1nak4arm625uj3qleekh0760wtjamczuse0yrz0)
 [![AlignedLayer](/assets/img/alignedlayer.png 'AlignedLayer')](https://testnet.alignedlayer.explorers.guru/validator/alignedvaloper1yaaxdjppr9h2x8v7nrum7utxy66772eks33rmy)
 [![0g](/assets/img/0g.jpeg 'og')](https://explorer.validatorvn.com/OG-Testnet/staking/evmosvaloper1nak4arm625uj3qleekh0760wtjamczustyfuhv)
