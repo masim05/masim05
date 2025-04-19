@@ -9,13 +9,13 @@ I will be happy to join your testnet as an early entrant or your team to combine
 
 ### Validating mainnets
 
-[![Band](/assets/img/band.svg 'Band')](https://band.explorers.guru/validator/bandvaloper1vamfrqdhhjurj3nu4mzev8q2xw2j9prq0yxe8e)
+[![Band](/assets/img/band.png 'Band')](https://band.explorers.guru/validator/bandvaloper1vamfrqdhhjurj3nu4mzev8q2xw2j9prq0yxe8e)
 [![Babylon](/assets/img/babylon.jpg 'Babylon')](https://www.mintscan.io/babylon/validators/bbnvaloper1hkdz6cysmhunksz8uw2waas2n49e2uwh38u9ku)
 [![Arkeo](/assets/img/arkeo.png 'Arkeo')](https://explorer.bonynode.online/arkeo/staking/arkeovaloper126npdwm05vzc7dr023sn5xc2t6hyw9v2kxkg7m)
 
 ### Validating testnets
 
-[![Galactica](/assets/img/galactica.svg 'Galactica')](https://testnet.itrocket.net/galactica/staking/galavaloper1nak4arm625uj3qleekh0760wtjamczuse0yrz0)
+[![Galactica](/assets/img/galactica.jpeg 'Galactica')](https://testnet.itrocket.net/galactica/staking/galavaloper1nak4arm625uj3qleekh0760wtjamczuse0yrz0)
 [![Arkeo](/assets/img/arkeo.png 'Arkeo Testnet 4')](https://explorer.bonynode.online/arkeo-testnet/staking/tarkeovaloper1d8jv29e50yka5u8062kfyframrw5fwm95xtyk4)
 [![Wardenprotocol](/assets/img/warden.jpeg 'Wardenprotocol')](https://testnet.warden.explorers.guru/validator/wardenvaloper1cxuey56nqxzsxwk4ct8hsjdnvnzvcxshwe9cev)
 [![Axone](/assets/img/axone.jpeg 'Axone')](https://explore.axone.xyz/Axone%20testnet/staking/axonevaloper1pjta55uduqjpc4gsr957us3e64z5a6hhnv4w80)
