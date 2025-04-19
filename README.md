@@ -4,7 +4,14 @@
 
 My name is Max, I'm a software engineer, engineering manager and crypto enthusiast. My main experience is related to backend development of large scale user facing products (upto 5K rps).
 I joined crypto industry in the second half of 2023 as an individual validator and contribute to open source from time to time.
-Apart from that I develop and 
+
+Some highlights of my open source contributions:
+
+- [web3-ansible-playbooks](https://github.com/masim05/web3-ansible-playbooks) - ansible playbooks for maintaining nodes
+- [go-string-cluster](https://github.com/masim05/go-string-cluster) - CLI utility to cluster similar lines, useful for clustering error messages
+- [nst-telegram-bot](https://github.com/masim05/nst-telegram-bot) - a telegram bot providing neural style transfer service
+
+Also I have a small technical [blog](https://masim05.github.io/) about engineering.
 
 I will be happy to join your testnet as an early entrant or your team to combine our efforts.
 
