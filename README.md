@@ -4,6 +4,7 @@
 
 My name is Max, I'm a software engineer, engineering manager and crypto enthusiast. My main experience is related to backend development of large scale user facing products (upto 5K rps).
 I joined crypto industry in the second half of 2023 as an individual validator and contribute to open source from time to time.
+Apart from that I develop and 
 
 I will be happy to join your testnet as an early entrant or your team to combine our efforts.
 
@@ -18,6 +19,7 @@ I will be happy to join your testnet as an early entrant or your team to combine
 [![Galactica](/assets/img/galactica.jpeg 'Galactica')](https://testnet.itrocket.net/galactica/staking/galavaloper1nak4arm625uj3qleekh0760wtjamczuse0yrz0)
 [![Arkeo](/assets/img/arkeo.png 'Arkeo Testnet 4')](https://explorer.bonynode.online/arkeo-testnet/staking/tarkeovaloper1d8jv29e50yka5u8062kfyframrw5fwm95xtyk4)
 [![Wardenprotocol](/assets/img/warden.jpeg 'Wardenprotocol')](https://testnet.warden.explorers.guru/validator/wardenvaloper1cxuey56nqxzsxwk4ct8hsjdnvnzvcxshwe9cev)
+[![Ghost](/assets/img/ghost.png 'Ghost')](https://telemetry.ghostchain.io/#/0x07074eb5f47a6f4dd70430674e5174d5414bc055292b90392fb6f0a28c7524d1)
 [![Axone](/assets/img/axone.jpeg 'Axone')](https://explore.axone.xyz/Axone%20testnet/staking/axonevaloper1pjta55uduqjpc4gsr957us3e64z5a6hhnv4w80)
 [![0g](/assets/img/0g.jpeg 'og')](https://testnet.0g.explorers.guru/validator/0gvaloper1nak4arm625uj3qleekh0760wtjamczusrkvynu)
 
