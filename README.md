@@ -1,5 +1,3 @@
-👋 Hi, there!
-
 ### About me
 
 My name is Max, I'm a software engineer, engineering manager and crypto enthusiast. My main experience is related to backend development of large scale user facing products (upto 5K rps).
