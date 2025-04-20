@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        #container {
+            display: flex;
+            flex: 1;
+        }
+        #sidebar {
+            width: 200px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        #sidebar a.active {
+            background-color: #007bff;
+            color: white;
+        }
+        #main {
+            flex: 1;
+            padding: 20px;
+        }
+        #footer {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+        }
+        #footer img {
+            width: 20px;
+            vertical-align: middle;
+        }
+        .copy-button {
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="sidebar">
+        <a href="#arkeo" data-name="arkeo">Arkeo</a>
+        <a href="#band" data-name="band">Band</a>
+
+        <a href="#arkeo-testnet" data-name="arkeo-testnet">Arkeo testnet</a>
+        <a href="#axone-testnet" data-name="axone-testnet">Axone testnet</a>
+        <a href="#galactica-testnet" data-name="galactica-testnet">Galactica testnet</a>
+        <a href="#warden-testnet" data-name="warden-testnet">Warden testnet</a>
+    </div>
+    <div id="main">
+        <h2 id="service-name">Select blockchain on the left</h2>
+        <div id="service-info" style="display:none;">
+            <p><strong>Chain ID:</strong> <span id="chain-id"></span></p>
+            <p><strong>RPC URL:</strong> <span id="rpc-url"></span> <button class="copy-button" onclick="copyToClipboard('rpc-url')">Copy</button></p>
+            <p><strong>API URL:</strong> <span id="api-url"></span> <button class="copy-button" onclick="copyToClipboard('api-url')">Copy</button></p>
+            <p><strong>gRPC URL:</strong> <span id="grpc-url"></span> <button class="copy-button" onclick="copyToClipboard('grpc-url')">Copy</button></p>
+            <p><strong>Peer:</strong> <span id="peer-url"></span> <button class="copy-button" onclick="copyToClipboard('peer-url')">Copy</button></p>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <a href="https://github.com/masim05" target="_blank">
+        <img src="octocat.png" alt="GitHub Octocat">
+    </a>
+</div>
+
+<script>
+    const data = [
+        {
+            name: "arkeo",
+            chainId: "arkeo-main-v1",
+            rpc: "https://rpc.arkeo.crptmax.com/",
+            grpc: "rpc.arkeo.crptmax.com:21443",
+            peer: "cb1bf587119c9a11fdfedd08efe2f2ba0fde6ec5@45.159.223.115:21656",
+        },
+        {
+            name: "arkeo-testnet",
+            chainId: "arkeo-testnet-4",
+            rpc: "https://rpc.arkeo-t.crptmax.com/",
+            grpc: "rpc.arkeo-t.crptmax.com:24443",
+            peer: "fb3f76e4cf54cce7699b927487eb35e11891ecf2@45.159.223.115:24656",
+        },
+        {
+            name: "axone-testnet",
+            chainId: "axone-dentrite-1",
+            rpc: "https://rpc.axone-t.crptmax.com/",
+            api: "https://api.axone-t.crptmax.com/",
+            grpc: "grpc.axone-t.crptmax.com:27443",
+            peer: "cc0f33ddf3f4e739debf4160aa33e47574257a21@45.159.223.115:27656",
+        },
+        {
+            name: "band",
+            chainId: "laozi-mainnet",
+            rpc: "https://rpc.band.crptmax.com/",
+            grpc: "grpc.band.crptmax.com:26443",
+            peer: "ad4f05d6bcdaa26955f21160be8112f55113cb37@45.159.223.115:26656",
+        },
+        {
+            name: "galactica-testnet",
+            chainId: "galactica_9302-1",
+            rpc: "https://rpc.galactica-t.crptmax.com/",
+            api: "https://api.galactica-t.crptmax.com/",
+            grpc: "grpc.galactica-t.crptmax.com:23443",
+            peer: "0d87d2ae3f7c60149ed358462577abb9915066c5@45.159.223.115:23656",
+        },
+        {
+            name: "warden-testnet",
+            chainId: "chiado_10010-1",
+            rpc: "https://rpc.warden-t.crptmax.com/",
+            api: "https://api.warden-t.crptmax.com/",
+            grpc: "grpc.warden-t.crptmax.com:30443",
+        },
+    ];
+
+    const menuItems = document.querySelectorAll('#sidebar a');
+    const serviceName = document.getElementById('service-name');
+    const serviceInfo = document.getElementById('service-info');
+    const chainId = document.getElementById('chain-id');
+    const rpcUrl = document.getElementById('rpc-url');
+    const apiUrl = document.getElementById('api-url');
+    const grpcUrl = document.getElementById('grpc-url');
+    const peerUrl = document.getElementById('peer-url');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Remove active class from all items
+            menuItems.forEach(i => i.classList.remove('active'));
+            
+            // Add active class to the clicked item
+            this.classList.add('active');
+
+            // Get the service name from the clicked item
+            const selectedService = this.getAttribute('data-name');
+            const serviceData = data.find(service => service.name === selectedService);
+
+            // Update content with selected service information
+            if (serviceData) {
+                serviceName.textContent = serviceData.name.charAt(0).toUpperCase() + serviceData.name.slice(1);
+                chainId.textContent = serviceData.chainId;
+                rpcUrl.textContent = serviceData.rpc;
+                apiUrl.textContent = serviceData.api;
+                grpcUrl.textContent = serviceData.grpc;
+                peerUrl.textContent = serviceData.peer;
+
+                // Show the info section
+                serviceInfo.style.display = 'block';
+                
+                // Update URL hash
+                window.location.hash = selectedService;
+            }
+        });
+    });
+
+    function copyToClipboard(elementId) {
+        const textToCopy = document.getElementById(elementId).textContent;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            alert(`${textToCopy} copied to clipboard!`);
+        });
+    }
+
+    // Check for initial hash in URL to select default item
+    if (window.location.hash) {
+        const hashName = window.location.hash.substring(1); // Remove '#'
+        const defaultItem = document.querySelector(`a[data-name="${hashName}"]`);
+        if (defaultItem) {
+            defaultItem.click();
+        }
+    }
+</script>
+
+</body>
+</html>
